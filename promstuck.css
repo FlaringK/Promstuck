@@ -1,0 +1,175 @@
+:root {
+  --cola: #c300ff;
+  --colb: #8300a6;
+  --colc: #f88000;
+  --cold: #FFDBB5;
+
+  --coltext: #0D1B1E;
+  --colsky: #6CD4FF;
+}
+
+@font-face {
+  font-family: fontstuckExtended;
+  src: url(./assets/fontstuck-extended.ttf);
+}
+
+@font-face {
+  font-family: carima;
+  src: url(./assets/carima.ttf);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: linear-gradient(135deg, var(--colsky), var(--coltext) 80%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main {
+  max-width: 1200px;
+  margin: auto;
+
+  background-color: var(--cold);
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a { 
+  color: var(--cola);
+  font-weight: bold;
+}
+a:hover { color: var(--colb) }
+
+h1, h2 {
+  font-family: fontstuckExtended;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h1 {
+  font-family: carima;
+  text-align: center;
+  color: white;
+  text-shadow: 
+    var(--coltext) 0 0 0.05em,
+    var(--coltext) 0 0 0.05em,
+    var(--coltext) 0 0 0.05em,
+    var(--coltext) 0 0 0.05em;
+}
+
+h2 {
+  border-bottom: currentColor solid;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 2em;
+  font-family: fontstuckExtended;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+
+}
+
+#banner {
+  margin-bottom: -5px;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+nav > * {
+  display: block;
+  flex-grow: 1;
+  text-align: center;
+  background-color: var(--cold);
+  padding: 0.1em;
+
+  text-decoration: none;
+  font-size: larger;
+
+  text-transform: uppercase;
+  border-bottom: solid var(--cola);
+}
+
+nav > *:hover  {
+  background-color: var(--colc);
+}
+
+/* content */
+
+#content {
+  margin: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--coltext);
+
+}
+
+/* .rainbow {
+  background: linear-gradient(to right, #E682F4 0%, #DFD17B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  font-size: 1.5em;
+  
+} */
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+
+  width: calc(
+    50% - 600px
+  );
+
+  overflow: hidden;
+}
+
+.sidebar .moon {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: unset;
+  height: 100vh;
+  left: auto;
+  right: auto;
+}
+
+.sidebar .city {
+  position: absolute;
+  bottom: 0;
+  width: 1500px;
+  left: calc(
+    50% - 750px
+  );
+}
+
+#derse {
+  right: 0;
+  scale: -1;
+}
+
+#prospit {
+  filter: invert(100%) hue-rotate(305deg) saturate(800%);
+}
+
+/* footer */
+
+#footer {
+  text-align: right;
+  padding: 0.1em 1em;
+}
