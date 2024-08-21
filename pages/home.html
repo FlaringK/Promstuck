@@ -1,6 +1,6 @@
 <div class="homeTitleWrap">
   <img src="./assets/Prospit_Emblem.png" class="emblem">
-  <h1 style="font-size: 5em; margin: 0;">
+  <h1 class="title">
     Let me tell you about the <span style="color: var(--cola);">DREAMIEST</span> Prom night
   </h1>
   <img src="./assets/Derse_Emblem.svg.png" class="emblem">
@@ -146,6 +146,10 @@
     align-items: center;
   }
 
+  .title {
+    font-size: 5em; margin: 0;
+  }
+
   .flex {
     display: flex; 
     justify-content: space-between;
@@ -228,5 +232,17 @@
   margin: 0.75em auto;
   font-size: 1.25em;
  }
+
+ @media (max-width: 700px) {
+
+  .title {
+    font-size: 2em;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  }
 
 </style>
