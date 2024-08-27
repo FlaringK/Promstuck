@@ -85,7 +85,8 @@ nav {
   justify-content: space-around;
   
   font-family: 'Courier New', Courier, monospace;
-
+  position: sticky;
+  top: 0;
 }
 
 nav > * {
@@ -109,10 +110,10 @@ nav > *:hover  {
 /* content */
 
 #content {
-  margin: 1em;
+  margin: 1em 1em 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--coltext);
-
+  padding: 1em;
 }
 
 /* .rainbow {
@@ -172,4 +173,111 @@ nav > *:hover  {
 #footer {
   text-align: right;
   padding: 0.1em 1em;
+}
+
+/* content */
+
+.homeTitleWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-size: 5em; margin: 0;
+}
+
+.flex {
+  display: flex; 
+  justify-content: space-between;
+  gap: 1em; 
+  margin: 1em 0 ;
+
+  line-height: 1.35;
+}
+
+.grow > div {
+  flex-grow: 1;
+  /* width: calc(50% - 1em); */
+}
+
+.homeImage {
+  object-fit: cover; 
+  width: 100%;
+  border: white solid;
+}
+
+.emblem {
+  width: 15%;
+  min-width: 100px;
+}
+
+.cta {
+  background: var(--colb);
+  padding: 0.5em 1em;
+  font-size: 1.5rem;
+  display: block;
+  width: fit-content;
+
+  border-radius: 0.25em;
+  color: var(--colc);
+  text-decoration: none;
+
+  margin: 2em auto;
+}
+
+.cta:hover {
+  background-color: var(--cola);
+}
+
+.datetime {
+  text-align: center; 
+  flex-grow: 1; 
+  font-size: 1.25em;
+
+  border: solid black;
+  border-radius: 1em;
+  background-color: #fffa;
+
+  padding: 1em;
+  padding-top: 0;
+}
+
+.datetime > div {
+  font-weight: bold;
+  margin-top: 0.75em;
+  margin-bottom: 0.25em;
+}
+
+.guest img {
+  width: 20%;
+  float: left;
+  border: white solid;
+  margin-right: 1em;
+}
+
+.sep {
+  margin-top: 1.5em; 
+  margin-bottom: 0; 
+  font-size: 3em; 
+  text-align: center;
+}
+
+.credits > div {
+text-align: center;
+font-size: bold;
+margin: 0.75em auto;
+font-size: 1.25em;
+}
+
+@media (max-width: 700px) {
+
+  .title {
+    font-size: 2em;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
 }
