@@ -299,6 +299,10 @@ margin: 0.75em auto;
 font-size: 1.25em;
 }
 
+.soon {
+  opacity: 0.5;
+}
+
 .sect {
   background-color: #ccaf90; 
   margin: 0 -2em; 
