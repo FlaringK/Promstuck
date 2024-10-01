@@ -287,6 +287,18 @@ margin: 0.75em auto;
 font-size: 1.25em;
 }
 
+.credits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.credits li {
+text-align: center;
+font-size: bold;
+margin: 0.75em auto;
+font-size: 1.25em;
+}
+
 .sect {
   background-color: #ccaf90; 
   margin: 0 -2em; 
