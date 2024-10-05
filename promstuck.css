@@ -310,6 +310,10 @@ font-size: 1.25em;
   padding-top: 0;
 }
 
+.bigImage {
+  max-width: 30%;
+}
+
 @media (max-width: 700px) {
 
   .title {
@@ -352,6 +356,10 @@ font-size: 1.25em;
   .datetime h3 {
     line-height: 1em;
     margin-top: 0;
+  }
+
+  .bigImage {
+    max-width: 100%;
   }
 
 }
