@@ -2,7 +2,7 @@
   --cola: #c300ff;
   --colb: #8300a6;
   --colc: #f88000;
-  --cold: #FFDBB5;
+  --cold: #fde7cf;
 
   --coltext: #0D1B1E;
   --colsky: #6CD4FF;
@@ -304,7 +304,7 @@ font-size: 1.25em;
 }
 
 .sect {
-  background-color: #ccaf90; 
+  background-color: #cab8a5; 
   margin: 0 -2em; 
   padding: 2em; 
   padding-top: 0;
