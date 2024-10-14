@@ -266,9 +266,13 @@ nav > *:hover  {
   margin-bottom: 0.25em;
 }
 
+.guest {
+  display: flex;
+  align-items: center;
+}
+
 .guest img {
-  width: 20%;
-  float: left;
+  width: 150px;
   border: white solid;
   margin-right: 1em;
 }
