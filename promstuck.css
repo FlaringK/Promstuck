@@ -256,13 +256,20 @@ nav > *:hover  {
   color: black;
   text-decoration: none;
 
-  margin: 2em auto;
+  margin: 2em auto 0;
   font-family: 'Courier New', Courier, monospace;
   border: solid currentColor;
 
   translate: -.5rem -.5rem;
   box-shadow: currentColor .5rem .5rem;
   text-align: center;
+}
+
+.warn {
+  text-align: center; 
+  margin: 0 0 1em;
+  color: red;
+  font-weight: bold;
 }
 
 .cta:hover {
