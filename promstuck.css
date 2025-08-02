@@ -354,6 +354,19 @@ font-size: 1.25em;
 
 }
 
+.businfo {
+  width: 80%;
+  font-weight: bold;
+  margin: 2em auto;
+  background-color: #fff3;
+  padding: .5em 1em;
+  border-radius: 20px;
+}
+
+.businfo h3 {
+  text-decoration: underline;
+}
+
 @media (max-width: 700px) {
 
   .title {
