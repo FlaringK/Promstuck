@@ -1,0 +1,168 @@
+@font-face {
+	font-family: chomsky;
+	src: url(./assets2027/Chomsky-8MOa2.otf);
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+
+	background-color: black;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#main {
+	max-width: 1200px;
+	margin: 2em auto;
+
+	background-color: #20401f;
+	color: white;
+	min-height: 100vh;
+	padding: 1em 2em;
+	box-shadow: 
+		1em -1em 0 #20401f55,
+		.7em -0em 0 #20401f55,
+		.9em -.5em 0 #20401f55,
+		.5em -.25em 0 #20401f55;
+	border-top-left-radius: 2em 1em;
+	border-bottom-right-radius: 2em 1em;
+}
+
+img {
+	width: 100%;
+}
+
+.flex {
+	display: flex; 
+	justify-content: space-between;
+	gap: 1em; 
+	margin: 1em 0 ;
+
+	line-height: 1.35;
+}
+
+.align {
+	align-items: center;
+}
+
+.centered {
+	text-align: center;
+}
+
+a {
+	color: lime;
+}
+
+hr {
+	color: #fffa
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: .5em 1em;
+}
+
+.section {
+	margin-bottom: 2em;
+}
+
+/* HEADER */
+
+.title {
+	font-family: chomsky, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 70px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.tagline {
+	width: 20%;
+	border: currentColor solid;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+.edition {
+	width: 20%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	border-top: currentColor solid;
+	border-bottom: currentColor solid;
+
+	a {
+		color: white;
+		flex-grow: 1;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+
+		&:hover {
+			background-color: white;
+			color: black;
+		}
+	}
+}
+
+.storelink {
+	background-color: lime;
+	color: black;
+}
+
+#headline {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 120px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.subtitle {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 80px;
+	text-align: center;
+	font-weight: 500;
+	position: relative;
+	text-transform: uppercase;
+}
+
+/* CONTENT */
+
+h2 {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 35px;
+	text-align: center;
+	position: relative;
+
+	padding: .25em 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h2::before, h2::after, #subtitle::before {
+	content: "";
+	width: 50%;
+	border: solid #fffa 1px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+h2::before { top: 0; }
+h2::after { bottom: 0; }
+
+.dress > div {
+	width: 20%;
+}
+
+.credits {
+	display: flex;
+	justify-content: space-around;
+	border-top: #fffa solid;
+	border-bottom: #fffa solid;
+}
