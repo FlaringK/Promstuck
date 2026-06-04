@@ -16,7 +16,7 @@ body {
 	margin: 2em auto;
 
 	background-color: #20401f;
-	color: white;
+	color: #ffe;
 	min-height: 100vh;
 	padding: 1em 2em;
 	box-shadow: 
@@ -94,14 +94,14 @@ nav {
 	border-bottom: currentColor solid;
 
 	a {
-		color: white;
+		color: #ffe;
 		flex-grow: 1;
 		text-align: center;
 		text-decoration: none;
 		font-weight: bold;
 
 		&:hover {
-			background-color: white;
+			background-color: #ffe;
 			color: black;
 		}
 	}
@@ -165,4 +165,40 @@ h2::after { bottom: 0; }
 	justify-content: space-around;
 	border-top: #fffa solid;
 	border-bottom: #fffa solid;
+}
+
+@media (max-width: 800px) {
+	#main {
+		padding: 1em;
+	}
+
+	.grid {
+		display: block;
+	}
+
+	.credits {
+		display: block;
+		text-align: center;
+	}
+
+	#headline {
+		font-size: 50px;
+	}
+
+	.subtitle {
+		font-size: xx-large;
+	}	
+	
+	.title {
+		font-size: xx-large;
+		flex-grow: 1;
+	}
+
+	h2 {
+		font-size: x-large;
+	}
+
+	.tagline, .edition {
+		display: none;
+	}
 }
