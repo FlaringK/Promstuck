@@ -8,7 +8,12 @@ body {
 	min-height: 100vh;
 
 	background-color: black;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background-image:linear-gradient(
+		0deg,
+		#000a,
+		#000a 50%
+		), url(./assets2027/sound-absorbing-panel-fm-blackwood-stack-2440-mm-architextures.jpg);
 }
 
 #main {
@@ -20,10 +25,11 @@ body {
 	min-height: 100vh;
 	padding: 1em 2em;
 	box-shadow: 
-		1em -1em 0 #20401f55,
-		.7em -0em 0 #20401f55,
-		.9em -.5em 0 #20401f55,
-		.5em -.25em 0 #20401f55;
+		.5em -.25em 0 #072106,
+		.9em -.5em 0 #061a06,
+		.7em -0em 0 #122d11,
+		1em -1em 0 #041503,
+		10px 0 10px 10px #000a;
 	border-top-left-radius: 2em 1em;
 	border-bottom-right-radius: 2em 1em;
 }
@@ -69,6 +75,14 @@ hr {
 
 /* HEADER */
 
+#banner {
+	display: block;
+	width: 90%;
+	margin: 1em auto;
+	border: #d4d0c8 solid 10px;
+	box-shadow: 0 0 10px black;
+}
+
 .title {
 	font-family: chomsky, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 70px;
@@ -92,6 +106,10 @@ nav {
 	justify-content: space-around;
 	border-top: currentColor solid;
 	border-bottom: currentColor solid;
+	position: sticky;
+	top: 0;
+	background-color: inherit;
+	z-index: 100;
 
 	a {
 		color: #ffe;
@@ -167,6 +185,27 @@ h2::after { bottom: 0; }
 	border-bottom: #fffa solid;
 }
 
+.cards img {
+	position: absolute;
+	width: 400px;
+	top: 80vh;
+	z-index: -10;
+	border-radius: 20px;
+
+	&:nth-child(even) {
+		left: 5em;
+		rotate: 5deg;
+	}
+	&:nth-child(odd) {
+		right: 5em;
+		rotate: -5deg;
+	}
+	&:nth-child(2) { top: 120vh; }
+	&:nth-child(3) { top: 200vh; }
+	&:nth-child(4) { top: 300vh; }
+	&:nth-child(5) { top: 400vh; }
+}
+
 @media (max-width: 800px) {
 	#main {
 		padding: 1em;
@@ -200,5 +239,9 @@ h2::after { bottom: 0; }
 
 	.tagline, .edition {
 		display: none;
+	}
+
+	nav {
+		margin: 0 -1em;
 	}
 }
