@@ -206,6 +206,25 @@ h2::after { bottom: 0; }
 	&:nth-child(5) { top: 400vh; }
 }
 
+.names div {
+	border: solid currentColor;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	font-size: .75em;
+	font-weight: bold;
+}
+
+.names {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr; 
+	text-align: center; 
+	max-width: 600px; 
+	margin: auto;
+	gap: 5px;
+}
+
 @media (max-width: 800px) {
 	#main {
 		padding: 1em;
@@ -243,5 +262,10 @@ h2::after { bottom: 0; }
 
 	nav {
 		margin: 0 -1em;
+	}
+
+	
+	.names {
+		grid-template-columns: 1fr 1fr; 
 	}
 }
