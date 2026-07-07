@@ -225,6 +225,16 @@ h2::after { bottom: 0; }
 	gap: 5px;
 }
 
+.quotes {
+	padding: 1em;
+	font-style: italic;
+	& > div div {
+		text-align: right;
+		font-style: normal;
+		font-weight: bold;
+	}
+}
+
 @media (max-width: 800px) {
 	#main {
 		padding: 1em;
